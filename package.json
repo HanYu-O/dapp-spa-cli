@@ -1,0 +1,48 @@
+{
+  "name": "dapp-spa-cli",
+  "version": "1.0.1",
+  "description": "🚀 快速创建SPA项目的CLI工具，支持React + TypeScript + Webpack开箱即用的开发环境",
+  "main": "bin/cli.js",
+  "type": "module",
+  "bin": {
+    "dapp-spa-cli": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "echo '发布前检查...' && node bin/cli.js --version"
+  },
+  "keywords": [
+    "cli",
+    "spa",
+    "react",
+    "typescript",
+    "webpack",
+    "dapp",
+    "scaffold",
+    "generator",
+    "frontend",
+    "development"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/dapp-spa-cli.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md"
+  ],
+  "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "figlet": "^1.8.1",
+    "inquirer": "^12.6.3",
+    "ora": "^8.2.0"
+  }
+}
