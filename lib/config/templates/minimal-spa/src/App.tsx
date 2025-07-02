@@ -7,7 +7,7 @@ function App() {
     <div className="app">
       <header className="app-header">
         <h1>{{ PROJECT_NAME }}</h1>
-        <p>欢迎使用 DAPP SPA CLI 创建的项目！</p>
+        <p>欢迎使用 SPA CLI 创建的项目！</p>
       </header>
 
       <main className="app-main">

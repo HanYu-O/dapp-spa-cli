@@ -1,0 +1,277 @@
+/* Pages Styles - TailwindCSS version */
+@import "tailwindcss";
+
+/* Home Page Styles with TailwindCSS */
+.home-container {
+  @apply min-h-[calc(100vh-4rem)] bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50;
+}
+
+.home-wrapper {
+  @apply max-w-6xl mx-auto px-6 py-12;
+}
+
+.hero-section {
+  @apply text-center mb-12;
+}
+
+.hero-icon {
+  @apply inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-600 rounded-2xl mb-6 shadow-lg shadow-blue-500/25;
+}
+
+.hero-icon-text {
+  @apply text-white font-bold text-2xl;
+}
+
+.hero-title {
+  @apply text-5xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-indigo-900 bg-clip-text text-transparent mb-4;
+}
+
+.hero-description {
+  @apply text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed;
+}
+
+.hero-command {
+  @apply bg-gray-900/95 backdrop-blur text-green-400 p-4 rounded-xl max-w-md mx-auto font-mono text-sm shadow-2xl;
+}
+
+.hero-command-prompt {
+  @apply text-gray-500;
+}
+
+.features-grid {
+  @apply grid md:grid-cols-3 gap-6 mb-12;
+}
+
+.feature-card {
+  @apply bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:bg-white/80 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 hover:-translate-y-1;
+}
+
+.feature-icon {
+  @apply text-3xl mb-4 transition-transform duration-300;
+}
+
+.feature-card:hover .feature-icon {
+  @apply scale-110;
+}
+
+.feature-title {
+  @apply text-lg font-semibold text-gray-900 mb-2;
+}
+
+.feature-description {
+  @apply text-gray-600 text-sm leading-relaxed;
+}
+
+.quickstart-section {
+  @apply bg-white/60 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-xl;
+}
+
+.quickstart-title {
+  @apply text-2xl font-bold text-gray-900 mb-6 text-center;
+}
+
+.quickstart-grid {
+  @apply grid md:grid-cols-2 gap-6;
+}
+
+.quickstart-step {
+  @apply space-y-3;
+}
+
+.quickstart-step-title {
+  @apply font-semibold text-gray-900 flex items-center;
+}
+
+.quickstart-step-number {
+  @apply w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs mr-2;
+}
+
+.quickstart-step-number2 {
+  @apply w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center text-xs mr-2;
+}
+
+.quickstart-command {
+  @apply bg-gray-100/80 p-3 rounded-lg font-mono text-sm text-gray-800;
+}
+
+/* About Page Styles with TailwindCSS */
+.about-container {
+  @apply min-h-[calc(100vh-4rem)] bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50;
+}
+
+.about-wrapper {
+  @apply max-w-5xl mx-auto px-6 py-12;
+}
+
+.about-header {
+  @apply text-center mb-10;
+}
+
+.about-title {
+  @apply text-4xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-indigo-900 bg-clip-text text-transparent mb-4;
+}
+
+.about-description {
+  @apply text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed;
+}
+
+.about-content-grid {
+  @apply grid lg:grid-cols-2 gap-6 mb-8;
+}
+
+.tech-stack-card,
+.features-card {
+  @apply bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-lg;
+}
+
+.card-title {
+  @apply text-xl font-bold text-gray-900 mb-4;
+}
+
+.tech-stack-list,
+.highlights-list {
+  @apply space-y-3;
+}
+
+.tech-item {
+  @apply flex items-center justify-between p-3 bg-gray-50/50 rounded-lg border border-gray-100/50;
+}
+
+.tech-item-left {
+  @apply flex items-center space-x-3;
+}
+
+.tech-dot {
+  @apply w-3 h-3 rounded-full;
+}
+
+.tech-dot-blue {
+  @apply bg-blue-500;
+}
+.tech-dot-indigo {
+  @apply bg-indigo-500;
+}
+.tech-dot-purple {
+  @apply bg-purple-500;
+}
+.tech-dot-green {
+  @apply bg-green-500;
+}
+
+.tech-name {
+  @apply font-semibold text-gray-900 text-sm;
+}
+
+.tech-purpose {
+  @apply text-xs text-gray-500;
+}
+
+.tech-version {
+  @apply text-xs font-mono text-blue-600 bg-blue-50 px-2 py-1 rounded;
+}
+
+.highlight-item {
+  @apply flex items-start space-x-3 p-3 rounded-lg hover:bg-white/50 transition-colors;
+}
+
+.highlight-icon {
+  @apply text-lg;
+}
+
+.highlight-text {
+  @apply font-semibold text-gray-900 text-sm;
+}
+
+.highlight-desc {
+  @apply text-xs text-gray-600;
+}
+
+.project-info-card {
+  @apply bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/20 shadow-lg;
+}
+
+.project-info-title {
+  @apply text-xl font-bold text-gray-900 mb-4 text-center;
+}
+
+.project-info-grid {
+  @apply grid md:grid-cols-2 gap-6;
+}
+
+.info-item {
+  @apply text-center;
+}
+
+.info-icon {
+  @apply w-12 h-12 rounded-xl mx-auto mb-3 flex items-center justify-center;
+}
+
+.info-icon-blue {
+  @apply bg-gradient-to-br from-blue-500 to-indigo-600;
+}
+
+.info-icon-purple {
+  @apply bg-gradient-to-br from-purple-500 to-pink-600;
+}
+
+.info-icon-text {
+  @apply text-white font-bold;
+}
+
+.info-title {
+  @apply font-semibold text-gray-900 mb-2;
+}
+
+.info-desc {
+  @apply text-gray-600 text-sm leading-relaxed;
+}
+
+/* Header Styles with TailwindCSS */
+.header {
+  @apply bg-white/80 backdrop-blur-md border-b border-gray-200/50 sticky top-0 z-50;
+}
+
+.header-container {
+  @apply max-w-6xl mx-auto px-6;
+}
+
+.header-content {
+  @apply flex items-center justify-between h-16;
+}
+
+.logo-container {
+  @apply flex items-center space-x-3;
+}
+
+.logo-icon {
+  @apply w-9 h-9 bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg;
+}
+
+.logo-text {
+  @apply text-white font-bold text-sm;
+}
+
+.brand-text {
+  @apply text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent;
+}
+
+.nav-container {
+  @apply flex space-x-1;
+}
+
+.nav-link {
+  @apply relative px-4 py-2 rounded-lg font-medium transition-all duration-200 text-gray-600 hover:text-blue-600 hover:bg-gray-50/70;
+}
+
+.nav-link-active {
+  @apply text-blue-600 bg-blue-50/70;
+}
+
+.nav-indicator {
+  @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 w-6 h-0.5 bg-blue-500 rounded-full;
+}
+
+/* Layout Styles with TailwindCSS */
+.layout-container {
+  @apply min-h-screen bg-white;
+}

@@ -1,6 +1,6 @@
 # {{PROJECT_NAME}}
 
-一个使用 [DAPP SPA CLI](https://github.com/your-username/dapp-spa-cli) 创建的最小化单页应用项目。
+一个使用 [SPA CLI](https://github.com/your-username/spa-cli) 创建的最小化单页应用项目。
 
 ## 🚀 技术栈
 

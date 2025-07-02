@@ -3,4 +3,7 @@ node_modules
 架构指南_SPA_250617.md
 手搓CLI指南.md
 DAPP_SPA_CLI开发指南.md
+verdaccio私仓发布指南.md
+PUBLISH.md
 package.template.json
+.npmrc

@@ -1,32 +1,41 @@
 {
   "name": "{{PROJECT_NAME}}",
   "version": "1.0.0",
-  "description": "A minimal SPA project created with spa-cli",
+  "description": "A full-featured SPA project created with spa-cli",
   "scripts": {
     "client:dev": "webpack --mode development",
     "client:server": "webpack server --mode development",
-    "client:prod": "webpack --mode production"
+    "client:prod": "webpack --mode production",
+    "lint:fix": "tsc --noEmit & eslint ./src --ext .ts,.tsx,.js --fix",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
-  "keywords": ["react", "typescript", "webpack", "spa"],
+  "keywords": ["react", "typescript", "webpack", "spa", "full-featured"],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "immer": "^10.1.1",
+    "lucide-react": "^0.516.0"
   },
   "devDependencies": {
     "@swc/core": "^1.12.1",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+    "@types/node": "^24.0.3",
+    "@welldone-software/why-did-you-render": "^10.0.1",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
     "html-webpack-plugin": "^5.6.3",
     "mini-css-extract-plugin": "^2.9.2",
     "swc-loader": "^0.2.6",
+    "terser-webpack-plugin": "^5.3.14",
     "typescript": "^5.7.3",
     "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2",
+    "webpack-merge": "^6.0.1",
     "yargs-parser": "^21.1.1"
   }
 } 

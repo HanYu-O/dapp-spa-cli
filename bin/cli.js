@@ -3,18 +3,23 @@
 import { program } from "commander";
 import chalk from "chalk";
 import figlet from "figlet";
+import lolcatjs from "@darkobits/lolcatjs";
 import { createCommand } from "../lib/commands/create.js";
 import fs from "fs";
 
 const packageJson = JSON.parse(fs.readFileSync("./package.json", "utf8"));
 
-// 显示欢迎信息
-console.log(chalk.cyan(figlet.textSync("DAPP SPA CLI", { font: "Standard" })));
-console.log(chalk.gray("🚀 快速创建SPA项目的CLI工具\n"));
+// 创建炫酷的彩虹标题
+const title = figlet.textSync("SPA CLI", { font: "Standard" });
+console.log(lolcatjs.fromString(title));
+
+// 显示彩虹色的欢迎信息
+const welcomeText = "🚀 快速创建SPA项目的CLI工具";
+console.log(lolcatjs.fromString(welcomeText) + "\n");
 
 // 设置CLI基本信息
 program
-  .name("dapp-spa-cli")
+  .name("spa-cli")
   .version(packageJson.version, "-v, --version", "显示版本号")
   .helpOption("-h, --help", "显示帮助信息");
 
