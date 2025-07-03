@@ -7,7 +7,7 @@ import lolcatjs from "@darkobits/lolcatjs";
 import { createCommand } from "../lib/commands/create.js";
 import fs from "fs";
 
-const packageJson = JSON.parse(fs.readFileSync("./package.json", "utf8"));
+const packageJson = JSON.parse(fs.readFileSync("../package.json", "utf8"));
 
 // 创建炫酷的彩虹标题
 const title = figlet.textSync("SPA CLI", { font: "Standard" });

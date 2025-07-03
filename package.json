@@ -1,6 +1,6 @@
 {
-  "name": "spa-cli",
-  "version": "2.0.0",
+  "name": "@hylsd/spa-cli",
+  "version": "2.0.1",
   "description": "🚀 快速创建SPA项目的CLI工具，支持React + TypeScript + Webpack开箱即用的开发环境",
   "main": "bin/cli.js",
   "type": "module",
@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "echo '发布前检查...' && node bin/cli.js --version",
     "publish:verdaccio": "npm publish --registry http://localhost:4873",
-    "login:verdaccio": "npm adduser --registry http://localhost:4873"
+    "login:verdaccio": "npm login --registry http://localhost:4873"
   },
   "keywords": [
     "cli",
@@ -28,10 +28,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/spa-cli.git"
+    "url": "https://github.com/HanYu-O/dapp-spa-cli/tree/v2.0.0"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=20.0.0"
   },
   "files": [
     "bin",
